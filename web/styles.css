@@ -616,6 +616,146 @@ ul {
     letter-spacing: 2px;
 }
 
+/* SOFTWARE SHOWCASE SECTION */
+.software-section {
+    background: rgba(15, 23, 42, 0.3);
+}
+
+.software-showcase-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.software-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 2rem;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    box-shadow: 0 10px 30px var(--shadow-color);
+}
+
+.software-card:hover {
+    border-color: var(--accent-color);
+    transform: translateY(-4px);
+}
+
+.software-header {
+    margin-bottom: 1.5rem;
+}
+
+.software-tag {
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    border-radius: 50px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.software-tag.desktop {
+    background: rgba(37, 99, 235, 0.15);
+    color: #3b82f6;
+    border: 1px solid rgba(37, 99, 235, 0.3);
+}
+
+.software-tag.revit {
+    background: rgba(168, 85, 247, 0.15);
+    color: #a855f7;
+    border: 1px solid rgba(168, 85, 247, 0.3);
+}
+
+.software-tag.cloud {
+    background: rgba(34, 197, 94, 0.15);
+    color: #22c55e;
+    border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+.software-header h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 0.3rem;
+}
+
+.software-subtitle {
+    color: var(--accent-color);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.software-preview-carousel {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.software-img {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 14px var(--shadow-color);
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.software-img.ribbon-img {
+    grid-column: 1 / -1;
+    max-height: 180px;
+    object-fit: contain;
+    background: #ffffff;
+    padding: 0.5rem;
+}
+
+.software-img:hover {
+    transform: scale(1.02);
+}
+
+.software-details h4 {
+    font-size: 1.05rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-primary);
+}
+
+.software-feature-list {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-bottom: 1.25rem;
+}
+
+.software-feature-list li {
+    position: relative;
+    padding-left: 1.4rem;
+    margin-bottom: 0.6rem;
+    line-height: 1.5;
+}
+
+.software-feature-list li::before {
+    content: '⚡';
+    position: absolute;
+    left: 0;
+    font-size: 0.85rem;
+}
+
+.software-tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.software-tech-tags span {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    color: var(--accent-color);
+    padding: 0.25rem 0.75rem;
+    border-radius: 6px;
+    font-size: 0.82rem;
+    font-family: 'Fira Code', monospace;
+    font-weight: 500;
+}
+
 /* Projects Section */
 .project-filters {
     display: flex;
